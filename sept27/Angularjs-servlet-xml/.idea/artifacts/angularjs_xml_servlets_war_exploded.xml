@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="angularjs-xml-servlets:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/angularjs_xml_servlets_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="angularjs-xml-servlets/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="angularjs-xml-servlets" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

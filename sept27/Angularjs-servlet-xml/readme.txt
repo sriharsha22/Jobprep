@@ -1,0 +1,1 @@
+http://www.simplecodestuffs.com/angularjs-interacting-with-java-servlet-using-json/
