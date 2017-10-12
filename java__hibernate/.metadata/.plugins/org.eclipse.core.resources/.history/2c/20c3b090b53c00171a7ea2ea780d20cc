@@ -1,0 +1,19 @@
+package com.harsha.hibernate.main;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.harsha.hibernate.entity.Student;
+
+public class CreateStudent {
+
+	public static void main(String[] args) {
+		
+		SessionFactory factory = new Configuration()
+								.configure("hibernate.cfg.cml")
+								.addAnnotatedClass(Student.class)
+								.buildSessionFactory();
+
+	}
+
+}

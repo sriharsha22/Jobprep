@@ -1,0 +1,27 @@
+<form novalidate name="form1" class="form-inline"  ng-submit = "form1.$valid && SubmitForm();">
+  <div class="ng-dirty">
+    <p ng-show="form1.$submitted && form1.name.$error.required">Name is required</p>
+    <p ng-show="form1.$submitted && form1.name.$error.minlength">Name should be atleast 7 chars</p>
+    <p ng-show="form1.$submitted && form1.number.$error.length">Ph Number should have 10 digits</p>
+  </div>
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" name="name" class="form-control" required placeholder="Name" ng-minlength="7" ng-model="detailsArray.name">
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" class="form-control" placeholder="email" ng-model="detailsArray.email">
+  </div>
+  <div class="form-group">
+    <label>Phone Number</label>
+    <input type="number" name="number" ng-length ="10" class="form-control" placeholder="Phone No." ng-model="detailsArray.ph">
+  </div>
+  <select class="form-control" ng-model="detailsArray.state">
+    <option>Texas</option>
+    <option>Newyork</option>
+    <option>Chicago</option>
+    <option>Florida</option>
+    <option>Californa</option>
+  </select>
+  <input type="submit" submitted class="btn btn-success"/>
+</form>

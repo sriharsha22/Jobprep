@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app ="app4">
+  <head>
+    <meta charset="utf-8">
+    <title>NG-MODEL</title>
+    <script type="text/javascript" src="js/angular.min1.js"></script>
+    <script type="text/javascript" src="js/model.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="table-responsive" ng-controller="controller1 as con1">
+      <table class="table">
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>State</th>
+        </tr>
+        <tr>
+          <td>{{con1.details.name}}</td>
+          <td>{{con1.details.email}}</td>
+          <td>{{con1.details.ph}}</td>
+          <td>{{con1.details.state}}</td>
+        </tr>
+
+      </table>
+      <form class="form-inline">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" placeholder="Name" ng-model="con1.details.name">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" class="form-control" placeholder="email" ng-model="con1.details.email">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="number" class="form-control" placeholder="Phone No." ng-model="con1.details.ph">
+        </div>
+        <select class="form-control" ng-model="con1.details.state">
+          <option>Texas</option>
+          <option>Newyork</option>
+          <option>Chicago</option>
+          <option>Florida</option>
+          <option>Californa</option>
+        </select>
+      </form>
+    </div>
+  </body>
+</html>

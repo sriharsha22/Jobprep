@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="app8">
+  <head >
+    <meta charset="utf-8">
+    <title>HTTP-get</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script type="text/javascript" src="xget.js"></script>
+  </head>
+  <body>
+    <div ng-controller = "controller">
+      <table border="1px solid black">
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Model</th>
+          <th>Status</th>
+          <th>Purchase On</th>
+        </tr>
+        <tr ng-repeat="detail in detailsArray">
+          <td>{{detail.name}}</td>
+          <td>{{detail.email}}</td>
+          <td>{{detail.model}}</td>
+          <td>{{detail.status}}</td>
+          <td>{{detail.date}}</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

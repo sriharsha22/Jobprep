@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="repeat">
+  <head>
+    <meta charset="utf-8">
+    <title>NG-REPEAT</title>
+    <script type="text/javascript" src="js/angular.min1.js"></script>
+    <script type="text/javascript" src="js/repeat.js"></script>
+  </head>
+  <body>
+
+    <div ng-controller = "controller1 as con1">
+      <table border="1px">
+        <tr><th>Name</th><th>Email</th><th>Phone No.</th><th>State</th></tr>
+        <tr ng-repeat = "details in con1.objectArray"><td>{{details.name}}</td><td>{{details.email}}</td><td>{{details.ph}}</td><td>{{details.state}}</td></tr>
+      </table>
+    </div>
+
+  </body>
+</html>
